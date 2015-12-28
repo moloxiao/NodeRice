@@ -1,0 +1,14 @@
+{
+  "name": "noderice",
+  "version": "1.0.0",
+  "description": "node rice is a node toolchains",
+  "main": "noderice.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "molo.xiao@gmail.com",
+  "license": "ISC"
+}
