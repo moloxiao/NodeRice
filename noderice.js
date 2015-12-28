@@ -1,5 +1,7 @@
 
 
+//--------------------------------------------------------------------------------
+// 方法定义
 
 function getip(req){
     var ipAddress;
@@ -104,10 +106,60 @@ function getMd5(content){
     return md5.digest('hex');   
 } 
 
+//--------------------------------------------------------------------------------
+// 变量定义
 
+var prov_info = [
+    {prov_id : 999999, prov_name : '未知'},
+    {prov_id : 100000, prov_name : '北京'},
+    {prov_id : 750000, prov_name : '宁夏'},
+    {prov_id : 830000, prov_name : '新疆'},
+    {prov_id : 210000, prov_name : '江苏'},
+    {prov_id : 510000, prov_name : '广东'},
+    {prov_id : 610000, prov_name : '四川'},
+    {prov_id : 250000, prov_name : '山东'},
+    {prov_id : 330000, prov_name : '江西'},
+    {prov_id : 300000, prov_name : '天津'},
+    {prov_id : 150000, prov_name : '黑龙江'},
+    {prov_id : 570000, prov_name : '海南'},
+    {prov_id : 650000, prov_name : '云南'},
+    {prov_id : 730000, prov_name : '甘肃'},
+    {prov_id : 10000, prov_name : '内蒙古'},
+    {prov_id : 30000, prov_name : '山西'},
+    {prov_id : 50000, prov_name : '河北'},
+    {prov_id : 110000, prov_name : '辽宁'},
+    {prov_id : 130000, prov_name : '吉林'},
+    {prov_id : 200000, prov_name : '上海'},
+    {prov_id : 230000, prov_name : '安徽'},
+    {prov_id : 310000, prov_name : '浙江'},
+    {prov_id : 350000, prov_name : '福建'},
+    {prov_id : 400000, prov_name : '重庆'},
+    {prov_id : 410000, prov_name : '湖南'},
+    {prov_id : 430000, prov_name : '湖北'},
+    {prov_id : 450000, prov_name : '河南'},
+    {prov_id : 530000, prov_name : '广西'},
+    {prov_id : 550000, prov_name : '贵州'},
+    {prov_id : 710000, prov_name : '陕西'},
+    {prov_id : 810000, prov_name : '青海'},
+    {prov_id : 850000, prov_name : '西藏'}
+];
+
+var carrier_info = [
+    {carrier_id : 1, carrier_name : '移动'},
+    {carrier_id : 2, carrier_name : '联通'},
+    {carrier_id : 3, carrier_name : '电信'}
+];
+
+
+//--------------------------------------------------------------------------------
+// 导出-方法定义
 exports.getip = getip;
 exports.getCarrierInfo = getCarrierInfo;
 exports.time_init = time_init;
 exports.getMd5 = getMd5;  
 exports.GetDateStr = GetDateStr;
 
+//--------------------------------------------------------------------------------
+// 导出-变量定义
+exports.prov_info = prov_info;
+exports.carrier_info = carrier_info;
