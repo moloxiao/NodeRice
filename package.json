@@ -1,6 +1,6 @@
 {
   "name": "noderice",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "node rice is a node toolchains",
   "main": "noderice.js",
   "scripts": {

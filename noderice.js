@@ -150,7 +150,6 @@ var carrier_info = [
 exports.getip = getip;
 exports.getCarrierInfo = getCarrierInfo;
 exports.time_init = time_init;
-exports.getMd5 = getMd5;  
 exports.GetDateStr = GetDateStr;
 
 //--------------------------------------------------------------------------------
