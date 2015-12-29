@@ -100,12 +100,6 @@ function GetDateStr(AddDayCount) {
     return y+"-"+m+"-"+d;
 }
 
-function getMd5(content){
-    var md5 = crypto.createHash('md5');
-    md5.update(content);
-    return md5.digest('hex');   
-} 
-
 //--------------------------------------------------------------------------------
 // 变量定义
 
