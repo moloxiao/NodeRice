@@ -32,7 +32,7 @@ function isLanIp (ipAddress) {
         return true;
     }else if( ipAddress.substring(0,4) == '172.'){
         var positions = ipAddress.split('.');
-        if(positions.length == 4 &&  parseInt(positions[1])>=16 && parseInt(positions[i])<=31 ){
+        if(positions.length == 4 &&  parseInt(positions[1])>=16 && parseInt(positions[1])<=31 ){
             return true;
         }
     }
