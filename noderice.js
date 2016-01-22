@@ -169,6 +169,7 @@ exports.getip = getip;
 exports.getCarrierInfo = getCarrierInfo;
 exports.time_init = time_init;
 exports.GetDateStr = GetDateStr;
+exports.GetDateNum = GetDateNum;
 
 //--------------------------------------------------------------------------------
 // 导出-变量定义
