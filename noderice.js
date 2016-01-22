@@ -100,6 +100,24 @@ function GetDateStr(AddDayCount) {
     return y+"-"+m+"-"+d;
 }
 
+/**
+ * 获取昨天的日期
+ */
+function GetDateNum(AddDayCount) {
+    var dd = new Date();
+    dd.setDate(dd.getDate()+AddDayCount);//获取AddDayCount天后的日期
+    var y = dd.getFullYear();
+    var m = dd.getMonth()+1;//获取当前月份的日期
+    if(m <10) {
+        m = '0' + m;
+    }
+    var d = dd.getDate();
+    if(d <10) {
+        d = '0' + d;
+    }
+    return parseInt(y+m+d);
+}
+
 //--------------------------------------------------------------------------------
 // 变量定义
 
