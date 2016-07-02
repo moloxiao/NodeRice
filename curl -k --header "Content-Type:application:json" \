@@ -1,0 +1,34 @@
+// 登陆测试
+curl -k -X GET --header "Content-Type:application/json" \
+	-H "x-12301-key:xujiyaoisolddriverTY" \
+	-H "x-12301-platform:mac" \
+	-H "x-12301-version:1.0" \
+	-H "x-12301-deviceid:dwewe2312dxwxwdd3e23e" \
+	-d \
+	'{ "phone_num" : 13087650001, "user_type":5}' \
+	https://appapi.12301e.com/auth/login/captcha
+
+// 发送验证码测试
+curl -k -X GET --header "Content-Type:application/json" \
+	-H "x-12301-key:xujiyaoisolddriverTY" \
+	-H "x-12301-platform:mac" \
+	-H "x-12301-version:1.0" \
+	-H "x-12301-deviceid:dwewe2312dxwxwdd3e23e" \
+	-d \
+	'{ "phone_num" : 13087650001}' \
+	https://appapi.12301e.com/auth/captcha/get
+
+// 获取用户信息
+curl -k -X GET --header "Content-Type:application/json" \
+	-H "x-12301-key:xujiyaoisolddriverTY" \
+	-H "x-12301-sessionid:S_14645787428510.4169192658737302" \
+	-d \
+	'{ "phone_num" : 13087650001, "query_type":3}' \
+	https://appapi.12301e.com/guide/userinfo
+
+
+
+
+
+
+	
